@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Q&A - Powered by Gemini</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font for futuristic look -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fonts for futuristic look and simple text -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero">
         <div class="container">
-            <h1>Ajex AI </h1>
-            <p>Ask Anything, Powered by Ajex AI</p>
-            <textarea id="question" placeholder="Enter your question (e.g., Explain how AI works)"></textarea>
-            <button onclick="askQuestion()">Get Answer</button>
-            <div id="answer" class="answer-box"></div>
+            <h1>Ajex Ai</h1>
+            <p>Ask Anything, Powered by Ajex Ai</p>
+            <div class="chat-area" id="chatArea">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <div class="input-section">
+                <textarea id="question" placeholder="Ask your question..."></textarea>
+                <button onclick="askQuestion()">Send</button>
+            </div>
         </div>
     </div>
     <footer>
